@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/userCreated}" th:object="${user}" th:method="POST">
+	<label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" th:field="*{userId}" required><br><br>
+		<label for="loginName">Login Name:</label>
+        <input type="text" id="loginName" name="loginName" th:field="*{loginName}" required><br><br>
+        <label for="passwordValue">Password:</label>
+        <input type="password" id="passwordValue" name="passwordValue" th:field="*{passwordValue}" required><br><br>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" th:field="*{firstName}" required><br><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" th:field="*{lastName}" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" th:field="*{email}" required><br><br>
+        <label for="confirmValue">Confirm Password:</label>
+        <input type="password" id="confirmValue" name="confirmValue" th:field="*{confirmValue}" required><br><br>
+        <label for="modified">Modified:</label>
+        <input type="date" id="modified" name="modified" th:field="*{modified}"><br><br>
+        <label for="created">created:</label>
+        <input type="date" id="created" name="created" th:field="*{created}"><br><br>
+        <label for="lastLogin">lastLogin:</label>
+        <input type="date" id="lastLogin" name="lastLogin" th:field="*{lastLogin}"><br><br>
+        <label for="passwordChanged">passwordChanged:</label>
+        <input type="date" id="passwordChanged" name="passwordChanged" th:field="*{passwordChanged}"><br><br>
+        <label for="companyId">Company ID:</label>
+        <input type="number" id="companyId" name="companyId" th:field="*{companyId}" required><br><br>
+        <label for="positionId">Position ID:</label>
+        <input type="number" id="positionId" name="positionId" th:field="*{positionId}" required><br><br>
+        <label for="inTelephone">In Telephone:</label>
+        <input type="tel" id="inTelephone" name="inTelephone" th:field="*{inTelephone}"><br><br>
+        <label for="outTelephone">Out Telephone:</label>
+        <input type="tel" id="outTelephone" name="outTelephone" th:field="*{outTelephone}"><br><br>
+        <label for="cellularPhone">Cellular Phone:</label>
+        <input type="tel" id="cellularPhone" name="cellularPhone" th:field="*{cellularPhone}"><br><br>
+        <label for="cellularMail">Cellular Mail:</label>
+        <input type="email" id="cellularMail" name="cellularMail" th:field="*{cellularMail}"><br><br>
+        <label for="cellularUid">Cellular UID:</label>
+        <input type="text" id="cellularUid" name="cellularUid" th:field="*{cellularUid}"><br><br>
+        <label for="firstNameKana">First Name Kana:</label>
+        <input type="text" id="firstNameKana" name="firstNameKana" th:field="*{firstNameKana}"><br><br>
+        <label for="lastNameKana">Last Name Kana:</label>
+        <input type="text" id="lastNameKana" name="lastNameKana" th:field="*{lastNameKana}"><br><br>
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" th:field="*{photo}"><br><br>
+        <label for="hasPhoto">Has Photo:</label>
+        <input type="text" id="hasPhoto" name="hasPhoto" th:field="*{hasPhoto}"><br><br>
+        <label for="photoModified">Photo Modified:</label>
+        <input type="date" id="photoModified" name="photoModified" th:field="*{photoModified}"><br><br>
+        <label for="photoSmartphone">Photo Smartphone:</label>
+        <input type="text" id="photoSmartphone" name="photoSmartphone" accept="image/*" th:field="*{photoSmartphone}"><br><br>
+        <label for="hasPhotoSmartphone">Has Photo Smartphone:</label>
+        <input type="text" id="hasPhotoSmartphone" name="hasPhotoSmartphone" th:field="*{hasPhotoSmartphone}"><br><br>
+        <label for="photoModifiedSmartphone">Photo Modified Smartphone:</label>
+        <input type="date" id="photoModifiedSmartphone" name="photoModifiedSmartphone" th:field="*{photoModifiedSmartphone}"><br><br>
+        <label for="tutorialForbid">Tutorial Forbid:</label>
+        <input type="text" id="tutorialForbid" name="tutorialForbid" th:field="*{tutorialForbid}"><br><br>
+        <label for="migrateVersion">Migrate Version:</label>
+        <input type="number" id="migrateVersion" name="migrateVersion" th:field="*{migrateVersion}"><br><br>
+        <label for="createdUserId">Created User ID:</label>
+        <input type="number" id="createdUserId" name="createdUserId" th:field="*{createdUserId}"><br><br>
+        <label for="updatedUserId">Updated User ID:</label>
+        <input type="number" id="updatedUserId" name="updatedUserId" th:field="*{updatedUserId}"><br><br>
+		<button type="submit">Create User</button>
+	</form>
+</body>
+</html>

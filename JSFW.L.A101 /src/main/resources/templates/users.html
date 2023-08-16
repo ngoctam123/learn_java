@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>User List</title>
+</head>
+<body>
+	<h1>User List</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>User ID</th>
+				<th>Login Name</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user : ${users}">
+				<td th:text="${user.userId}"></td>
+				<td th:text="${user.loginName}"></td>
+				<td th:text="${user.firstName}"></td>
+				<td th:text="${user.lastName}"></td>
+				<td th:text="${user.email}"></td>
+				<td>
+					<!-- <a th:href="userdetail?userID=" th:text='${user.userId}'>Chi tiết</a> -->
+					<a th:href="@{'userdetail/' + ${user.userId}}">chi tiết</a>
+					<a th:href="@{'userUpdate/' + ${user.userId}}">Sữa</a>
+				</td>
+
+			</tr>
+
+		</tbody>
+	</table>
+	<a th:href="@{userCreated}">Thêm user</a>
+</body>

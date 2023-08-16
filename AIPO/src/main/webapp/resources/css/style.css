@@ -1,0 +1,34 @@
+.bg-outlook {
+    background-color: #c1c1c1;
+}
+
+a ,.nav-link{
+    color: #333;
+}
+
+
+a.active {
+    background-color: #ccc;
+    font-weight: bolder;
+    /* margin: 5px; */
+}
+
+#addUser{
+    background-color: #d79b4d;
+    color: white;
+}
+
+.color-main{
+    background-color: #d79b4d;
+}
+
+input.form-control.col-6{
+	width: 45% !important;
+}
+
+@media  (min-width: 900px) {
+    .session{
+        min-width: 1400px !important;
+        /* padding-right: 1360px; */
+    }
+  }

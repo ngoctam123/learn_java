@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+</head>
+<body>
+    <h1>User Details</h1>
+    <p>User ID: <span th:text="${user.userId}"></span></p>
+    <p>Login Name: <span th:text="${user.loginName}"></span></p>
+    <p>First Name: <span th:text="${user.firstName}"></span></p>
+    <p>Last Name: <span th:text="${user.lastName}"></span></p>
+    <p>Email: <span th:text="${user.email}"></span></p>
+    <p>Created: <span th:text="${user.created}"></span></p>
+    <p>Last Login: <span th:text="${user.lastLogin}"></span></p>
+    <p>Disabled: <span th:text="${user.disabled}"></span></p>
+    <p>Company ID: <span th:text="${user.companyId}"></span></p>
+    <p>Position ID: <span th:text="${user.positionId}"></span></p>
+    <p>In Telephone: <span th:text="${user.inTelephone}"></span></p>
+    <p>Out Telephone: <span th:text="${user.outTelephone}"></span></p>
+    <p>Cellular Phone: <span th:text="${user.cellularPhone}"></span></p>
+    <p>Cellular Mail: <span th:text="${user.cellularMail}"></span></p>
+    <p>Cellular UID: <span th:text="${user.cellularUid}"></span></p>
+    <p>First Name Kana: <span th:text="${user.firstNameKana}"></span></p>
+    <p>Last Name Kana: <span th:text="${user.lastNameKana}"></span></p>
+    <p>Has Photo: <span th:text="${user.hasPhoto}"></span></p>
+    <p>Photo Modified: <span th:text="${user.photoModified}"></span></p>
+    <p>Has Photo Smartphone: <span th:text="${user.hasPhotoSmartphone}"></span></p>
+    <p>Photo Modified Smartphone: <span th:text="${user.photoModifiedSmartphone}"></span></p>
+    <p>Tutorial Forbid: <span th:text="${user.tutorialForbid}"></span></p>
+    <p>Migrate Version: <span th:text="${user.migrateVersion}"></span></p>
+    <p>Created User ID: <span th:text="${user.createdUserId}"></span></p>
+    <p>Updated User ID: <span th:text="${user.updatedUserId}"></span></p>
+</body>
+</html>
